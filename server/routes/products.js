@@ -37,12 +37,9 @@ router.post("/upload-item", async(req,res) => {
                     contentType : 'image/png'
                 }
             })
-
-           
                 const itemSaved = await newItem.save()
                 console.log('\x1b[42m%s\x1b[0m',"[SUCCESS] Uploading a new item.")
-                res.status(200).json(itemSaved)
-            
+                res.status(200).json(itemSaved)   
             }
             catch(err)
             {
