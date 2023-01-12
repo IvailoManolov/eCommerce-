@@ -12,6 +12,10 @@ import Navbar from './scenes/global/Navbar'
 import Home from "./scenes/home/Home"
 import ItemDetails from './scenes/itemDetails/ItemDetails'
 
+
+
+function App() {
+
 const ScrollToTop = () => {
   const {pathname} = useLocation()
 }
@@ -20,7 +24,6 @@ useEffect(() => {
   window.scrollTo(0,0)
 },[pathname])
 
-function App() {
   return (
     <div className='App'>
       <BrowserRouter>
